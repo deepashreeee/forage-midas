@@ -1,0 +1,16 @@
+general:
+  kafka-topic: test-topic  # Replace with your actual Kafka topic name
+
+spring:
+  kafka:
+    bootstrap-servers: localhost:9092  # Kafka broker address
+
+  datasource:
+    url: jdbc:h2:mem:testdb  # H2 in-memory database URL
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: password
+
+  h2:
+    console:
+      enabled: true  # Enable H2 console for debugging
